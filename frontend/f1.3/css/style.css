@@ -1,0 +1,13 @@
+div{
+  /* border: 1px solid; */
+}
+.container{
+  max-width: 1140px;
+  margin: auto;
+  background-color: white;
+  padding: 32px;
+}
+body{
+  background-color: rgb(231, 231, 231);
+  margin: 0;
+}
