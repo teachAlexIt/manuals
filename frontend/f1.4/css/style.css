@@ -1,7 +1,7 @@
 *{
   /* border: 1px solid red; */
 }
-div{
+.link-box{
   display: inline-block;
   border: 2px solid rgb(8, 87, 177);
   padding: 8px;
@@ -13,3 +13,25 @@ a h3{
 a p{
   color: black;
 }
+
+/* --------- */
+body{
+  
+}
+main{
+  
+  
+}
+div.container{
+  max-width: 1130px;
+  margin: auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+  border: none;
+  display: block;
+}
+section{
+  padding: 40px 0;
+  background-color: white;
+}
+

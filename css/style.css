@@ -1,5 +1,138 @@
-div{
-    width: 10vw;
-    background-color: aqua;
-    
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    padding-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    overflow: scroll;
+    font-size: 10px;
+    --mainBG: #fafafa;
+    --mainColor: #202020;
+    --red: #8D3D52;
+    --redHover: #753344;
+    --gray: #6d6d6d;
+    --grayHover: #535353;
+    background-color: var(--mainBG);
+}
+body::-webkit-scrollbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 6px;
+}
+body::-webkit-scrollbar-thumb{
+    width: 6px;
+    background-color: var(--red);
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--mainBG);
+    border-bottom: 1px solid var(--red);
+    box-shadow: 0 0 8px var(--red);
+}
+.container{
+    padding: 0 32px;
+    max-width: 1400px;
+    margin: auto;
+}
+h1{
+    font-size: 5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+h1 span{
+    color: var(--red);
+}
+.manuals h1{
+    text-align: center;
+}
+.curse__list{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+.curse__list a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 200px;
+    border: 1px solid var(--red);
+    font-size: 4em;
+    font-weight: bold;
+    color: var(--mainBG);
+    background-color: var(--red);
+    transition: 0.4s;
+}
+.curse__list a:hover{
+    transform: scale(1.1);
+}
+
+
+/*  */
+.manuals__item{
+    display: flex;
+    flex-direction: column;
+    text-align-last: left;
+    gap: 8px;
+    height: 48px;
+    overflow: hidden;
+    justify-content: start;
+    flex-wrap: nowrap;
+    transition: 0.4s ease-out;
+    background-color: rgb(236, 236, 236);
+    border-bottom: 2px solid var(--mainBG);
+}
+.manuals__item a{
+    padding: 8px;
+    color: var(--mainColor);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.4s;
+    font-size: 1.4em;
+}
+.manuals__item a:nth-last-child(1){
+    padding-bottom: 16px;
+}
+.manuals__item a:hover{
+    color: var(--red);
+}
+.manuals__item button{
+    height: 48px;
+    padding: 8px;
+    background-color: var(--gray);
+    color: white;
+    flex-shrink: 0;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 2em;
+}
+.manuals__item span{
+    transition: 0.4s;
+}
+.manuals__item span:nth-last-child(1){
+    font-weight: bold;
+}
+.manuals__item button:hover{
+    background-color: var(--grayHover);
+}
+._active button{
+    background-color: var(--red);
+}
+._active span:nth-last-child(1){
+    transform: rotate(45deg);
+}
+._active button:hover{
+    background-color: var(--redHover);
+}
+
+h2{
+    font-size: 2.4em;
+    margin: 1em 0;
+    font-weight: bold;
 }
