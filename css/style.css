@@ -11,6 +11,10 @@ body{
     --gray: #6d6d6d;
     --grayHover: #535353;
     background-color: var(--mainBG);
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    position: relative;
 }
 body::-webkit-scrollbar{
     position: fixed;
@@ -135,4 +139,19 @@ h2{
     font-size: 2.4em;
     margin: 1em 0;
     font-weight: bold;
+}
+
+
+
+/* 404 */
+.error{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.error img{
+    width: 50vw;
+    max-width: 1000px;
+    min-width: 250px;
 }
