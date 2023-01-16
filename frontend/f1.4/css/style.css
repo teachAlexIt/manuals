@@ -16,22 +16,22 @@ a p{
 
 /* --------- */
 body{
-  
-}
-main{
-  
-  
-}
-div.container{
-  max-width: 1130px;
-  margin: auto;
-  padding: 0 16px;
-  box-sizing: border-box;
-  border: none;
-  display: block;
-}
-section{
-  padding: 40px 0;
-  background-color: white;
+  background-color: rgb(230, 230, 230);
+  margin: 0;
 }
 
+section{
+  padding: 40px 0;
+}
+main{
+  max-width: 1200px;
+  margin: auto;
+  background-color: white;
+  padding: 0 32px;
+}
+header{
+  max-width: 1200px;
+  margin: auto;
+  background-color: white;
+  padding: 40px 32px;
+}
