@@ -63,11 +63,12 @@ h1 span{
     width: 280px;
     height: 200px;
     border: 1px solid var(--red);
-    font-size: 4em;
+    font-size: 3em;
     font-weight: bold;
     color: var(--mainBG);
     background-color: var(--red);
     transition: 0.4s;
+    text-align: center;
 }
 .curse__list a:hover{
     transform: scale(1.1);
