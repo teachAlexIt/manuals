@@ -34,4 +34,9 @@ header{
   margin: auto;
   background-color: white;
   padding: 40px 32px;
+  background-image: url(../../../img/headerBGTown.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 400px;
 }
