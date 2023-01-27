@@ -89,10 +89,14 @@ h1 span{
     background-color: rgb(236, 236, 236);
     border-bottom: 2px solid var(--mainBG);
 }
+.simple{
+    display: none;
+}
 .manuals__item a{
     padding: 8px;
     color: var(--mainColor);
-    display: flex;
+    display: inline-flex;
+    width: max-content;
     align-items: center;
     gap: 8px;
     transition: 0.4s;
@@ -112,16 +116,26 @@ h1 span{
     flex-shrink: 0;
     transition: 0.4s;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     font-size: 2em;
+    gap: 1em;
+    position: relative;
 }
 .manuals__item span{
     transition: 0.4s;
 }
 .manuals__item span:nth-last-child(1){
     font-weight: bold;
+    position: absolute;
+    right: 1em;
+    top: 25%;
+}
+.ManualName{
+    position: absolute;
+    left: 3.6em;
+    top: 25%;
 }
 .manuals__item button:hover{
     background-color: var(--grayHover);
