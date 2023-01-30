@@ -29,7 +29,13 @@ const manualsListStore = [
     LinkManual: '',
     LinkCrib: ''
   },
-
+  manualsInfo = {
+    Number: 'F1.5',
+    Name: '---',
+    LinkSimple: './f1.5/f1.5.html',
+    LinkManual: '',
+    LinkCrib: ''
+  },
 ]
 console.log(manualsListStore)
 for (let i = 0; i < manualsListStore.length; i++) {                     

@@ -1,16 +1,23 @@
-*{
+/* F1.3 */
+* {
   /* border: 1px solid red; */
 }
-div{
+
+div {
   display: inline-block;
   border: 2px solid rgb(8, 87, 177);
   padding: 8px;
   margin: 8px;
 }
-a h3{
+
+a h3 {
   color: rgb(8, 87, 177);
 }
-a p{
+
+a p {
   color: black;
 }
 
+a {
+  color: rgb(8, 87, 177);
+}
