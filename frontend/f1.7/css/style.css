@@ -69,3 +69,8 @@ img{
   width: 100%;
   max-width: 800px;
 }
+
+/* F1.7 */
+header.car{
+  background-image: url(../../f1\ img/CarBg.png);
+}

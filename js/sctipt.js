@@ -36,6 +36,20 @@ const manualsListStore = [
     LinkManual: '',
     LinkCrib: ''
   },
+  manualsInfo = {
+    Number: 'F1.6',
+    Name: 'GitHub',
+    LinkSimple: './f1.5/f1.5.html',
+    LinkManual: '',
+    LinkCrib: ''
+  },
+  manualsInfo = {
+    Number: 'F1.7',
+    Name: 'Добавляем странички',
+    LinkSimple: './f1.7/f1.7.html',
+    LinkManual: '',
+    LinkCrib: ''
+  },
 ]
 console.log(manualsListStore)
 for (let i = 0; i < manualsListStore.length; i++) {                     
