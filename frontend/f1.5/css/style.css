@@ -34,20 +34,6 @@ section {
   margin: auto;
   background-color: white;
 }
-
-header {
-  max-width: 1200px;
-  margin: auto;
-  background-color: white;
-  padding: 40px 32px 40px 32px;
-  background-image: url(../../f1\ img/headerBGTown.png);
-  background-size: cover;
-  background-position: center;
-  color: white;
-  height: 400px;
-}
-
-/* F1.4 */
 footer {
   max-width: 1200px;
   margin: auto;
@@ -56,6 +42,22 @@ footer {
   background-color: black;
   color: white;
 }
+header {
+  max-width: 1200px;
+  margin: auto;
+  background-color: white;
+  padding: 40px 32px 40px 32px;
+  color: white;
+  height: 400px;
+}
+
+/* F1.5 */
+header {
+  background-image: url(../../f1\ img/headerBGTown.png);
+  background-size: cover;
+  background-position: center;
+}
+
 div{
   transition: 0.4s;
 }

@@ -6,49 +6,64 @@ const manualsListStore = [
     Name: 'Знакомство с HTML',
     LinkSimple: './f1.1/f1.1.html',
     LinkManual: 'https://docs.google.com/presentation/d/1FqjqhWKirPPtGD1-Af6oaESi7fsVed_IGrldVnlJd9g/edit?usp=sharing',
-    LinkCrib: 'https://drive.google.com/file/d/1gxjKqWheEL2xU5z6zFCHsMGISjeHUjVC/view?usp=sharing'
+    LinkCrib: 'https://drive.google.com/file/d/1gxjKqWheEL2xU5z6zFCHsMGISjeHUjVC/view?usp=sharing',
+    Title: ''
   },
   manualsInfo = {
     Number: 'F1.2',
     Name: 'Изучаем новые теги',
     LinkSimple: './f1.2/f1.2.html',
     LinkManual: 'https://docs.google.com/presentation/d/1YIfmWEuZruWp5jzBMStpu7tgmB9BVNvRRbtIr5Yup6Y/edit?usp=sharing',
-    LinkCrib: 'https://drive.google.com/file/d/1pNl3ZgYqhR8hZqmKlKyTs-1pV43obxVv/view?usp=sharing'
+    LinkCrib: 'https://drive.google.com/file/d/1pNl3ZgYqhR8hZqmKlKyTs-1pV43obxVv/view?usp=sharing',
+    Title: ''
   },
   manualsInfo = {
     Number: 'F1.3',
-    Name: '---',
+    Name: 'Знакомство с CSS',
     LinkSimple: './f1.3/f1.3.html',
     LinkManual: '',
-    LinkCrib: ''
+    LinkCrib: '',
+    Title: ''
   },
   manualsInfo = {
     Number: 'F1.4',
-    Name: '---',
+    Name: 'Секции',
     LinkSimple: './f1.4/f1.4.html',
     LinkManual: '',
-    LinkCrib: ''
+    LinkCrib: '',
+    Title: ''
   },
   manualsInfo = {
     Number: 'F1.5',
-    Name: '---',
+    Name: 'Backg-image',
     LinkSimple: './f1.5/f1.5.html',
     LinkManual: '',
-    LinkCrib: ''
+    LinkCrib: '',
+    Title: ''
   },
   manualsInfo = {
     Number: 'F1.6',
-    Name: 'GitHub',
-    LinkSimple: './f1.5/f1.5.html',
+    Name: 'Google Fonts',
+    LinkSimple: './f1.6/f1.6.html',
     LinkManual: '',
-    LinkCrib: ''
+    LinkCrib: '',
+    Title: ''
   },
   manualsInfo = {
     Number: 'F1.7',
-    Name: 'Добавляем странички',
-    LinkSimple: './f1.7/f1.7.html',
+    Name: 'GitHub',
+    LinkSimple: './f1.6/f1.6.html',
     LinkManual: '',
-    LinkCrib: ''
+    LinkCrib: '',
+    Title: ''
+  },
+  manualsInfo = {
+    Number: 'F1.8',
+    Name: 'Добавляем странички',
+    LinkSimple: './f1.8/f1.8.html',
+    LinkManual: '',
+    LinkCrib: '',
+    Title: ''
   },
 ]
 console.log(manualsListStore)
@@ -61,6 +76,7 @@ for (let i = 0; i < manualsListStore.length; i++) {
   manualsItem.querySelector('.ManualLinkSimple').setAttribute('href',manualsItemInfo.LinkSimple);
   manualsItem.querySelector('.ManualLinkManual').setAttribute('href',manualsItemInfo.LinkManual);
   manualsItem.querySelector('.ManualLinkCrib').setAttribute('href',manualsItemInfo.LinkCrib);
+  manualsItem.querySelector('button').setAttribute('title',manualsItemInfo.Title);
   manualsList.appendChild(manualsItem);
 }
 
@@ -74,7 +90,7 @@ for (let i = 0; i < manualsItems.length; i++) {
     if (manualsItems[i].classList.contains('_active')) {
       manualsItems[i].style.height = h + "px";
     } else {
-      manualsItems[i].style.height = 48 + "px";
+      manualsItems[i].style.height = 50 + "px";
     }
   }
 }

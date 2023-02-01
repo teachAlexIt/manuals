@@ -40,9 +40,15 @@ header {
   margin: auto;
   background-color: white;
   padding: 40px 32px 40px 32px;
-  background-image: url(../../f1\ img/headerBGTown.png);
-  background-size: cover;
-  background-position: center;
-  color: white;
+  background-color: rgb(8, 87, 177);
   height: 400px;
+}
+
+footer {
+  max-width: 1200px;
+  margin: auto;
+  background-color: white;
+  padding: 32px 32px 32px 32px;
+  background-color: black;
+  color: white;
 }

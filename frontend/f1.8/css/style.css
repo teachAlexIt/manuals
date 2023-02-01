@@ -47,7 +47,7 @@ header {
   height: 400px;
 }
 
-/* F1.4 */
+/* F1.5 */
 footer {
   max-width: 1200px;
   margin: auto;
@@ -70,7 +70,37 @@ img{
   max-width: 800px;
 }
 
-/* F1.7 */
+/* F1.6 */
+
+input{
+  width: 100%;
+  max-width: 240px;
+  padding: 8px 8px 8px 8px;
+  border: 1px solid rgb(8, 87, 177);
+  margin: 0 0 8px 0;
+}
+button{
+  padding: 8px 8px 8px 8px;
+  background-color: rgb(8, 87, 177);
+  border: 1px solid rgb(8, 87, 177);
+  color: white;
+  margin: 0 0 8px 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+button:hover{
+  background-color: white;
+  color: rgb(8, 87, 177);
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+body{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/* F1.8 */
 header.car{
-  background-image: url(../../f1\ img/CarBg.png);
+  background-image: url(../../f1\ img/headerBGCar.png);
+}
+header.enimal{
+  background-image: url(../../f1\ img/headerBGEnimals.png);
 }

@@ -81,7 +81,7 @@ h1 span{
     flex-direction: column;
     text-align-last: left;
     gap: 8px;
-    height: 48px;
+    height: 50px;
     overflow: hidden;
     justify-content: start;
     flex-wrap: nowrap;
