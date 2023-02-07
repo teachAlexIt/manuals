@@ -7,7 +7,7 @@ const manualsListStore = [
     LinkSimple: './f1.1/f1.1.html',
     LinkManual: 'https://docs.google.com/presentation/d/1FqjqhWKirPPtGD1-Af6oaESi7fsVed_IGrldVnlJd9g/edit?usp=sharing',
     LinkCrib: 'https://drive.google.com/file/d/1gxjKqWheEL2xU5z6zFCHsMGISjeHUjVC/view?usp=sharing',
-    Title: ''
+    Title: '1.Cоздаем файл index.htm | 2.Cоздаём стартовый шаблон | 3.Теги: h1, p, h2, img, h3, ul, li, a.'
   },
   manualsInfo = {
     Number: 'F1.2',
@@ -15,7 +15,7 @@ const manualsListStore = [
     LinkSimple: './f1.2/f1.2.html',
     LinkManual: 'https://docs.google.com/presentation/d/1YIfmWEuZruWp5jzBMStpu7tgmB9BVNvRRbtIr5Yup6Y/edit?usp=sharing',
     LinkCrib: 'https://drive.google.com/file/d/1pNl3ZgYqhR8hZqmKlKyTs-1pV43obxVv/view?usp=sharing',
-    Title: ''
+    Title: '1.Сохранить картинки в свой проект | 2.Теги: b, form, input, button, span, br | 3.Блочные и строчные теги'
   },
   manualsInfo = {
     Number: 'F1.3',
@@ -23,7 +23,7 @@ const manualsListStore = [
     LinkSimple: './f1.3/f1.3.html',
     LinkManual: '',
     LinkCrib: '',
-    Title: ''
+    Title: '1.Знакомимся с <div> | 2.Знакомство с CSS | 3.Свойства: display, border, padding, margin, color'
   },
   manualsInfo = {
     Number: 'F1.4',
@@ -31,7 +31,7 @@ const manualsListStore = [
     LinkSimple: './f1.4/f1.4.html',
     LinkManual: '',
     LinkCrib: '',
-    Title: ''
+    Title: '1.Теги: header, section, footer | 2.Свойства: background-color, max-width, height'
   },
   manualsInfo = {
     Number: 'F1.5',
@@ -39,7 +39,7 @@ const manualsListStore = [
     LinkSimple: './f1.5/f1.5.html',
     LinkManual: '',
     LinkCrib: '',
-    Title: ''
+    Title: 'Свойства: background-image, background-size, background-position, hover, transition, width'
   },
   manualsInfo = {
     Number: 'F1.6',
@@ -47,7 +47,7 @@ const manualsListStore = [
     LinkSimple: './f1.6/f1.6.html',
     LinkManual: '',
     LinkCrib: '',
-    Title: ''
+    Title: '1. Стилизуем input button (margin-bottom) | 2. Меняем шрифт, подключаем Google-fonts'
   },
   manualsInfo = {
     Number: 'F1.7',
@@ -55,7 +55,7 @@ const manualsListStore = [
     LinkSimple: './f1.6/f1.6.html',
     LinkManual: '',
     LinkCrib: '',
-    Title: ''
+    Title: '1.регистрируемся на сайте гитхаб |  2.создаём репозиторий | 3.загружаем наш сайт в репозиторий | 4.публикуем'
   },
   manualsInfo = {
     Number: 'F1.8',
@@ -63,7 +63,7 @@ const manualsListStore = [
     LinkSimple: './f1.8/f1.8.html',
     LinkManual: '',
     LinkCrib: '',
-    Title: ''
+    Title: 'Три новые странички'
   },
 ]
 console.log(manualsListStore)
