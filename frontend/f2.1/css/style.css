@@ -1,0 +1,28 @@
+header {
+  height: 100vh;
+  background: linear-gradient(107.93deg, #00B4ED 0%, #DB78FE 100%);
+  /* background-size: 10% 10%; */
+  background-size: 400%;
+  background-repeat: no-repeat;
+  animation: headerBg 5s infinite linear alternate-reverse;
+}
+body{
+  margin: 0;
+  height: 1000px;
+}
+@keyframes headerBg{
+  0%{
+    background-position: top left;
+  }
+  100%{
+    background-position: bottom right;
+  }
+}
+nav{
+  height: 60px;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  border-radius: 0 0 16px 16px;
+  display: flex;
+}

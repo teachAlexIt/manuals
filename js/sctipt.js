@@ -65,6 +65,23 @@ const manualsListStore = [
     LinkCrib: '',
     Title: 'Три новые странички'
   },
+
+  manualsInfo = {
+    Number: 'F2.1',
+    Name: 'Header | Анимация',
+    LinkSimple: './f2.1/f2.1.html',
+    LinkManual: '',
+    LinkCrib: '',
+    Title: '1.Новый проект | 2. vh | 3.Анимация фона | position: fixed;'
+  },
+  manualsInfo = {
+    Number: 'F2.2',
+    Name: 'Nav | .container',
+    LinkSimple: './f2.1/f2.1.html',
+    LinkManual: '',
+    LinkCrib: '',
+    Title: '1. .container | 2. display: flex;'
+  },
 ]
 console.log(manualsListStore)
 for (let i = 0; i < manualsListStore.length; i++) {                     

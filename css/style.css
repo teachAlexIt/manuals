@@ -89,6 +89,9 @@ h1 span{
     background-color: rgb(255, 255, 255);
     border-bottom: 2px solid var(--mainBG);
 }
+.manuals__item:nth-child(9){
+    margin-bottom: 5em;
+}
 .simple{
     display: none;
 }
