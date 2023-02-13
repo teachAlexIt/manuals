@@ -82,6 +82,14 @@ const manualsListStore = [
     LinkCrib: '',
     Title: '1. .container | 2. display: flex;'
   },
+  manualsInfo = {
+    Number: 'F2.3',
+    Name: 'Nav | .container',
+    LinkSimple: './f2.3/f2.3.html',
+    LinkManual: '',
+    LinkCrib: '',
+    Title: '1. .container | 2. display: flex;'
+  },
 ]
 console.log(manualsListStore)
 for (let i = 0; i < manualsListStore.length; i++) {
