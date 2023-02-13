@@ -77,7 +77,7 @@ const manualsListStore = [
   manualsInfo = {
     Number: 'F2.2',
     Name: 'Nav | .container',
-    LinkSimple: './f2.1/f2.1.html',
+    LinkSimple: './f2.2/f2.2.html',
     LinkManual: '',
     LinkCrib: '',
     Title: '1. .container | 2. display: flex;'

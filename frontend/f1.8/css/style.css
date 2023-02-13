@@ -40,7 +40,7 @@ header {
   margin: auto;
   background-color: white;
   padding: 40px 32px 40px 32px;
-  background-image: url(../../f1\ img/headerBGTown.png);
+  background-image: url(../../f1img/headerBGTown.png);
   background-size: cover;
   background-position: center;
   color: white;
@@ -99,11 +99,11 @@ body{
 
 /* F1.8 */
 header.car{
-  background-image: url(../../f1\ img/headerBGCar.png);
+  background-image: url(../../f1img/headerBGCar.png);
 }
 header.enimal{
-  background-image: url(../../f1\ img/headerBGEnimals.png);
+  background-image: url(../../f1img/headerBGEnimals.png);
 }
 header.plants{
-  background-image: url(../../f1\ img/headerBGPlants.png);
+  background-image: url(../../f1img/headerBGPlants.png);
 }
