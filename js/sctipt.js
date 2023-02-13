@@ -80,15 +80,15 @@ const manualsListStore = [
     LinkSimple: './f2.2/f2.2.html',
     LinkManual: '',
     LinkCrib: '',
-    Title: '1. .container | 2. display: flex;'
+    Title: '1. .container | 2. display: flex; | 3 Классы БЭМ'
   },
   manualsInfo = {
     Number: 'F2.3',
-    Name: 'Nav | .container',
+    Name: 'Nav Стили',
     LinkSimple: './f2.3/f2.3.html',
     LinkManual: '',
     LinkCrib: '',
-    Title: '1. .container | 2. display: flex;'
+    Title: '1. Классы - модификатор | 2. -webkit-scrollbar'
   },
 ]
 console.log(manualsListStore)
