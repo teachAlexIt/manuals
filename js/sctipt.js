@@ -84,16 +84,16 @@ const manualsListStore = [
   },
 ]
 console.log(manualsListStore)
-for (let i = 0; i < manualsListStore.length; i++) {                     
+for (let i = 0; i < manualsListStore.length; i++) {
   const manualsItemInfo = manualsListStore[i];
   let manualsItem = manualsItemSimple.cloneNode(true);
-  manualsItem.setAttribute('class','manuals__item');
+  manualsItem.setAttribute('class', 'manuals__item');
   manualsItem.querySelector('.ManualNumber').innerText = manualsItemInfo.Number;
   manualsItem.querySelector('.ManualName').innerText = manualsItemInfo.Name;
-  manualsItem.querySelector('.ManualLinkSimple').setAttribute('href',manualsItemInfo.LinkSimple);
-  manualsItem.querySelector('.ManualLinkManual').setAttribute('href',manualsItemInfo.LinkManual);
-  manualsItem.querySelector('.ManualLinkCrib').setAttribute('href',manualsItemInfo.LinkCrib);
-  manualsItem.querySelector('button').setAttribute('title',manualsItemInfo.Title);
+  manualsItem.querySelector('.ManualLinkSimple').setAttribute('href', manualsItemInfo.LinkSimple);
+  manualsItem.querySelector('.ManualLinkManual').setAttribute('href', manualsItemInfo.LinkManual);
+  manualsItem.querySelector('.ManualLinkCrib').setAttribute('href', manualsItemInfo.LinkCrib);
+  manualsItem.querySelector('button').setAttribute('title', manualsItemInfo.Title);
   manualsList.appendChild(manualsItem);
 }
 
@@ -102,12 +102,24 @@ for (let i = 0; i < manualsListStore.length; i++) {
 const manualsItems = manualsList.querySelectorAll('.manuals__item');
 for (let i = 0; i < manualsItems.length; i++) {
   manualsItems[i].querySelector('button').onclick = function () {
-    let h = manualsItems[i].scrollHeight;
+    classRemove(manualsItems[i]);
     manualsItems[i].classList.toggle('_active');
-    if (manualsItems[i].classList.contains('_active')) {
-      manualsItems[i].style.height = h + "px";
-    } else {
-      manualsItems[i].style.height = 50 + "px";
+    chengeHeight(manualsItems[i]);
+  }
+}
+function classRemove(item) {
+  for (let i = 0; i < manualsItems.length; i++) {
+    if (manualsItems[i] != item) {
+      manualsItems[i].classList.remove('_active');
+      chengeHeight(manualsItems[i]);
     }
+  }
+}
+function chengeHeight(item) {
+  let h = item.scrollHeight;
+  if (item.classList.contains('_active')) {
+    item.style.height = h + "px";
+  } else {
+    item.style.height = 50 + "px";
   }
 }
