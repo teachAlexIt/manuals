@@ -166,4 +166,37 @@ nav {
   transition: 0.5s;
 }
 
+/* f2.5 */
 
+section {
+  padding: 80px 0;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 40px;
+  color: #00B4ED;
+  margin: 0 0 60px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about__elements {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 109px;
+}
+
+.about__elements p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 24px 32px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 50px rgba(0, 180, 237, 0.15), 0px 4px 10px rgba(0, 180, 237, 0.1);
+  border-radius: 30px;
+}
+nav{
+  box-shadow: 0px 4px 4px rgba(0, 180, 237, 0.1);
+}

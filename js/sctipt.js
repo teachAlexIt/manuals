@@ -98,6 +98,14 @@ const manualsListStore = [
     LinkCrib: '',
     Title: '1. Классы - модификатор | 2. -webkit-scrollbar'
   },
+  manualsInfo = {
+    Number: 'F2.5',
+    Name: 'Header Стили',
+    LinkSimple: './f2.5/f2.5.html',
+    LinkManual: '',
+    LinkCrib: '',
+    Title: '1. Классы - модификатор | 2. -webkit-scrollbar'
+  },
 ]
 console.log(manualsListStore)
 for (let i = 0; i < manualsListStore.length; i++) {
