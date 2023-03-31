@@ -292,6 +292,7 @@ nav {
   transition: 0.8s;
   color: white;
   text-decoration: none;
+  box-shadow: 0px 0px 50px rgba(0, 180, 237, 0.15), 0px 4px 10px rgba(0, 180, 237, 0.1);
 }
 
 .works__content {
