@@ -11,7 +11,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="../../minLogo.ico">
-  <title>F2.7</title>
+  <title>F2.8</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -19,14 +19,14 @@
   <nav>
     <div class="container">
       <div class="nav__elements">
-        <a href="" class="nav__logo">
+        <a href="#header" class="nav__logo">
           <img src="../f2img/nav__logo.svg" alt="">
         </a>
         <div class="nav__links">
-          <a href="">Обо мне</a>
-          <a href="">Навыки</a>
-          <a href="">Работы</a>
-          <a href="">Контакты</a>
+          <a href="#about">Обо мне</a>
+          <a href="#skils">Навыки</a>
+          <a href="#works">Работы</a>
+          <a href="#contacts">Контакты</a>
         </div>
         <div class="nav__social">
           <a class="nav__social_telegram" href=""><i class="fa-brands fa-telegram"></i></a>
@@ -35,7 +35,7 @@
       </div>
     </div>
   </nav>
-  <header>
+  <header id="header">
     <div class="container">
       <div class="header__elements">
         <div class="header__info">
@@ -48,7 +48,7 @@
       </div>
     </div>
   </header>
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <h2>Обо мне</h2>
       <div class="about__elements">
@@ -67,7 +67,7 @@
     </div>
   </section>
 
-  <section class="skills">
+  <section class="skills" id="skils">
     <div class="container">
       <h2>Навыки</h2>
       <div class="skills__list">
@@ -107,7 +107,7 @@
     </div>
   </section>
 
-  <section class="works">
+  <section class="works" id="works">
     <div class="container">
       <h2>Работы</h2>
       <div class="works__elements">
@@ -118,6 +118,23 @@
           </div>
         </a>
       </div>
+    </div>
+  </section>
+
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <h2>Контакты</h2>
+      <h3>Оставьте заявку и я свяжусь с вами в течении дня!</h3>
+      <hr>
+      <form action="#">
+        <label for="name">Ваше имя</label>
+        <input type="text" placeholder="Введите имя" id="name">
+        <label for="email">Ваша почта</label>
+        <input type="email" placeholder="Введите почту" id="email">
+        <label for="massage">Комментаарий</label>
+        <textarea id="massage" placeholder="Комментаарий"></textarea>
+        <button type="submit">Отправить</button>
+      </form>
     </div>
   </section>
   <script src="https://kit.fontawesome.com/0dfb09cd7e.js" crossorigin="anonymous"></script>

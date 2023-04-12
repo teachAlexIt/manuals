@@ -122,6 +122,14 @@ const manualsListStore = [
     LinkCrib: '',
     Title: '1. Классы - модификатор | 2. -webkit-scrollbar'
   },
+  manualsInfo = {
+    Number: 'F2.8',
+    Name: 'Contacts',
+    LinkSimple: './f2.8/f2.8.html',
+    LinkManual: '',
+    LinkCrib: '',
+    Title: '1. Классы - модификатор | 2. -webkit-scrollbar'
+  },
 ]
 console.log(manualsListStore)
 for (let i = 0; i < manualsListStore.length; i++) {
