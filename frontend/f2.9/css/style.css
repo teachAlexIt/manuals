@@ -77,21 +77,21 @@ body {
   color: #DB78FE;
 }
 
-.nav__social a {
+.nav__social a, .footer__social a {
   font-size: 20px;
   line-height: 20px;
   transition: 0.4s;
 }
 
-.nav__social_telegram {
+.nav__social_telegram, .footer__social_telegram {
   color: #375DE4;
 }
 
-.nav__social_whatsapp {
+.nav__social_whatsapp, .footer__social_whatsapp {
   color: #14B106;
 }
 
-.nav__social a:hover {
+.nav__social a:hover, .footer__social a:hover {
   color: #DB78FE;
 }
 
@@ -454,4 +454,21 @@ nav {
 
 html{
   scroll-behavior: smooth;
+}
+
+/* footer */
+footer{
+  padding: 20px;
+  background-color: #2C2C2C;
+}
+.footer__elements{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  color: #FFFFFF;
+}
+.footer__social{
+  display: flex;
+  gap: 20px;
 }
