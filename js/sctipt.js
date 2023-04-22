@@ -100,7 +100,7 @@ const manualsListStore = [
   },
   manualsInfo = {
     Number: 'F2.5',
-    Name: 'Header Стили',
+    Name: 'About Me',
     LinkSimple: './f2.5/f2.5.html',
     LinkManual: '',
     LinkCrib: '',
