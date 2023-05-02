@@ -140,8 +140,16 @@ const manualsListStore = [
   },
   manualsInfo = {
     Number: 'F2.10',
-    Name: 'Адаптив',
+    Name: 'Адаптив Nav Header',
     LinkSimple: './f2.10/f2.10.html',
+    LinkManual: '',
+    LinkCrib: '',
+    Title: 'Адапив часть 1'
+  },
+  manualsInfo = {
+    Number: 'F2.11',
+    Name: 'Адаптив About-me',
+    LinkSimple: './f2.11/f2.11.html',
     LinkManual: '',
     LinkCrib: '',
     Title: 'Адапив часть 1'
