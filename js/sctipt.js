@@ -154,6 +154,14 @@ const manualsListStore = [
     LinkCrib: '',
     Title: 'Адапив часть 1'
   },
+  manualsInfo = {
+    Number: 'F2.12',
+    Name: 'Адаптив Skils',
+    LinkSimple: './f2.12/f2.12.html',
+    LinkManual: '',
+    LinkCrib: '',
+    Title: 'Адапив часть 1'
+  },
 ]
 console.log(manualsListStore)
 for (let i = 0; i < manualsListStore.length; i++) {
