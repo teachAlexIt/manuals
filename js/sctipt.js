@@ -194,6 +194,14 @@ const manualsListStore = [
     LinkCrib: '',
     Title: 'Адапив часть 1'
   },
+  manualsInfo = {
+    Number: 'F3.1',
+    Name: 'Figma',
+    LinkSimple: './f3.1/f3.1.html',
+    LinkManual: '',
+    LinkCrib: 'https://www.figma.com/file/M7RJWbBEnHt1jAjOhatJ3E/F3?type=design&node-id=0%3A1&t=5ctpu1ik6Azukal9-1',
+    Title: 'Адапив часть 1'
+  },
 ]
 console.log(manualsListStore)
 for (let i = 0; i < manualsListStore.length; i++) {
