@@ -210,6 +210,14 @@ const manualsListStore = [
     LinkCrib: 'https://www.figma.com/file/M7RJWbBEnHt1jAjOhatJ3E/F3?type=design&node-id=0%3A1&t=5ctpu1ik6Azukal9-1',
     Title: 'Nav Адапив'
   },
+  manualsInfo = {
+    Number: 'F3.3',
+    Name: 'Figma Nav JS',
+    LinkSimple: './f3.3/f3.3.html',
+    LinkManual: '',
+    LinkCrib: 'https://www.figma.com/file/M7RJWbBEnHt1jAjOhatJ3E/F3?type=design&node-id=0%3A1&t=5ctpu1ik6Azukal9-1',
+    Title: 'Nav JS'
+  },
 ]
 console.log(manualsListStore)
 for (let i = 0; i < manualsListStore.length; i++) {

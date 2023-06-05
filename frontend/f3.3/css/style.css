@@ -1,0 +1,145 @@
+/* f3.1 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --TextColor: #2D2D2D;
+  --WhiteColor: #D9D9D9;
+}
+
+a {
+  text-decoration: none;
+  color: var(--TextColor);
+  position: relative;
+  display: inline-block;
+}
+
+a::after {
+  content: '';
+  width: 0.5px;
+  height: 0.5px;
+  background-color: var(--TextColor);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.4s;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+body {
+  font-family: 'Poiret One', cursive;
+  color: var(--TextColor);
+}
+
+nav {
+  font-size: 16px;/* f3.2 */
+  line-height: 19px;/* f3.2 */
+}
+
+.container {
+  max-width: 1176px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+.nav__logo::after {
+  content: none;
+}
+
+.nav__elements {
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;  /*f3.2*/
+}
+
+.nav__contact {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+
+.address,
+.tel {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: start;
+}
+
+.nav__contact a {
+  display: flex;
+  gap: 5px;
+  align-items: start;
+}
+
+.nav__contact p,
+.call-me {
+  transform: translateX(17px);
+}
+
+.nav__links {
+  display: flex;
+  gap: 56px;
+}
+
+/* f3.2 */
+
+.hamburger{
+  height: 20px;
+  width: 40px;
+  position: relative;
+  background: transparent;
+  border: none;
+  display: none;
+}
+.hamburger span{
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: var(--TextColor);
+  left: 0;
+  position: absolute;
+  transition: 0.4s;/* F3.3 */
+  z-index: 5;/* F3.3 */
+}
+.hamburger span:nth-child(1){
+  top: 0;
+}
+.hamburger span:nth-child(2){
+  top: 9px
+}
+.hamburger span:nth-child(3){
+  bottom: 0;
+}
+
+/* F3.3 */
+.hamburger_active span:nth-child(1){
+  top: 9px;
+  transform: rotate(-225deg);
+}
+.hamburger_active span:nth-child(2){
+  top: 9px;
+  transform: translateX(-40px);
+  opacity: 0;
+}
+.hamburger_active span:nth-child(3){
+  bottom: 9px;
+  transform: rotate(225deg);
+}
