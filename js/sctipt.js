@@ -226,6 +226,14 @@ const manualsListStore = [
     LinkCrib: 'https://www.figma.com/file/M7RJWbBEnHt1jAjOhatJ3E/F3?type=design&node-id=0%3A1&t=5ctpu1ik6Azukal9-1',
     Title: 'Header'
   },
+  manualsInfo = {
+    Number: 'F3.5',
+    Name: 'Figma Header Адапив',
+    LinkSimple: './f3.5/f3.5.html',
+    LinkManual: '',
+    LinkCrib: 'https://www.figma.com/file/M7RJWbBEnHt1jAjOhatJ3E/F3?type=design&node-id=0%3A1&t=5ctpu1ik6Azukal9-1',
+    Title: 'Header'
+  },
 ]
 console.log(manualsListStore)
 for (let i = 0; i < manualsListStore.length; i++) {
