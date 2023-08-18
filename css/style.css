@@ -6,8 +6,8 @@ body{
     font-size: 10px;
     --mainBG: #fafafa;
     --mainColor: #202020;
-    --red: #8D3D52;
-    --redHover: #753344;
+    --MainColor: #3a3a3a;
+    --MainColorHover: #753344;
     --gray: #6d6d6d;
     --grayHover: #535353;
     background-color: var(--mainBG);
@@ -15,6 +15,14 @@ body{
     height: auto; 
     min-height: 100vh;
     position: relative;
+}
+body.DStore{
+    --MainColor: #8d3d89;
+    --MainColorHover: #662863;
+}
+body.FStore{
+    --MainColor: #8d3d58;
+    --MainColorHover: #753344;
 }
 body::-webkit-scrollbar{
     position: fixed;
@@ -24,16 +32,17 @@ body::-webkit-scrollbar{
 }
 body::-webkit-scrollbar-thumb{
     width: 6px;
-    background-color: var(--red);
+    background-color: var(--MainColor);
 }
 nav{
     position: fixed;
     top: 0;
     width: 100%;
     background-color: var(--mainBG);
-    border-bottom: 1px solid var(--red);
-    box-shadow: 0 0 8px var(--red);
+    border-bottom: 1px solid var(--MainColor);
+    box-shadow: 0 0 8px var(--MainColor);
     z-index: 10;
+    padding: 8px 0;
 }
 .container{
     padding: 0 32px;
@@ -46,7 +55,7 @@ h1{
     margin-bottom: 0.5em;
 }
 h1 span{
-    color: var(--red);
+    color: var(--MainColor);
 }
 .manuals h1{
     text-align: center;
@@ -63,11 +72,11 @@ h1 span{
     justify-content: center;
     width: 280px;
     height: 200px;
-    border: 1px solid var(--red);
+    border: 1px solid var(--MainColor);
     font-size: 3em;
     font-weight: bold;
     color: var(--mainBG);
-    background-color: var(--red);
+    background-color: var(--MainColor);
     transition: 0.4s;
     text-align: center;
 }
@@ -91,7 +100,7 @@ h1 span{
     border-bottom: 2px solid var(--mainBG);
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.17);
 }
-.manuals__item:nth-child(9), .manuals__item:nth-child(25){
+.FStore .manuals__item:nth-child(9), .FStore .manuals__item:nth-child(25){
     margin-bottom: 5em;
 }
 .simple{
@@ -111,7 +120,7 @@ h1 span{
     padding-bottom: 16px;
 }
 .manuals__item a:hover{
-    color: var(--red);
+    color: var(--MainColor);
 }
 .manuals__item button{
     height: 48px;
@@ -147,13 +156,13 @@ h1 span{
     background-color: var(--grayHover);
 }
 ._active button{
-    background-color: var(--red);
+    background-color: var(--MainColor);
 }
 ._active span:nth-last-child(1){
     transform: rotate(45deg);
 }
 ._active button:hover{
-    background-color: var(--redHover);
+    background-color: var(--MainColorHover);
 }
 
 
