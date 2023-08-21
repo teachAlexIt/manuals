@@ -1,11 +1,14 @@
 import FStore from './FStore.js';
 import DStore from './DStore.js';
+import BStore from './BStore.js';
 const coursName = document.querySelector('body').getAttribute('class');
 let manualsListStore;
 if (coursName == 'FStore'){
   manualsListStore = FStore;
 }else if(coursName === 'DStore'){
   manualsListStore = DStore;
+}else if(coursName === 'BStore'){
+  manualsListStore = BStore;
 }
 
 
@@ -17,8 +20,17 @@ for (let i = 0; i < manualsListStore.length; i++) {
   manualsItem.setAttribute('class', 'manuals__item');
   manualsItem.querySelector('.ManualNumber').innerText = manualsItemInfo.Number;
   manualsItem.querySelector('.ManualName').innerText = manualsItemInfo.Name;
-  manualsItem.querySelector('.ManualLinkSimple').setAttribute('href', manualsItemInfo.LinkSimple);
-  manualsItem.querySelector('.ManualLinkManual').setAttribute('href', manualsItemInfo.LinkManual);
+ 
+  if (coursName === 'BStore') {
+    manualsItem.querySelector('.ManualLinkSimple').setAttribute('href', '../blender/Simle/' + manualsItemInfo.Number + '.fbx');
+    manualsItem.querySelector('.ManualLinkSimple').setAttribute('target', '');
+    manualsItem.querySelector('.ManualLinkManual').setAttribute('href', '../blender/Simle/' + manualsItemInfo.Number + '.blend');
+    manualsItem.querySelector('.ManualLinkManual').setAttribute('target', '');
+  }else{
+    manualsItem.querySelector('.ManualLinkSimple').setAttribute('href',  manualsItemInfo.LinkSimple);
+    manualsItem.querySelector('.ManualLinkManual').setAttribute('href', manualsItemInfo.LinkManual);
+  }
+  
   manualsItem.querySelector('.ManualLinkCrib').setAttribute('href', manualsItemInfo.LinkCrib);
   manualsItem.querySelector('button').setAttribute('title', manualsItemInfo.Title);
   manualsList.appendChild(manualsItem);

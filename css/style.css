@@ -24,6 +24,14 @@ body.FStore{
     --MainColor: #8d3d58;
     --MainColorHover: #753344;
 }
+body.BStore{
+    --MainColor: #e27916;
+    --MainColorHover: #a05510;
+}
+body.PStore{
+    --MainColor: #279406;
+    --MainColorHover: #1b6605;
+}
 body::-webkit-scrollbar{
     position: fixed;
     top: 0;
@@ -72,7 +80,7 @@ h1 span{
     justify-content: center;
     width: 280px;
     height: 200px;
-    border: 1px solid var(--MainColor);
+
     font-size: 3em;
     font-weight: bold;
     color: var(--mainBG);
@@ -81,7 +89,22 @@ h1 span{
     text-align: center;
 }
 .curse__list a:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+.curse__list .front{
+    background-color: #8d3d58;
+}
+.curse__list .blender{
+    background-color: #e27916;
+}
+.curse__list .scratch{
+    background-color: #be3600;
+}
+.curse__list .design{
+    background-color: #8d3d89;
+}
+.curse__list .python{
+    background-color: #279406;
 }
 
 
@@ -186,3 +209,4 @@ h2{
     max-width: 1000px;
     min-width: 250px;
 }
+
