@@ -232,6 +232,14 @@ const FStore = [
     LinkCrib: 'https://www.figma.com/file/M7RJWbBEnHt1jAjOhatJ3E/F3?type=design&node-id=0%3A1&t=5ctpu1ik6Azukal9-1',
     Title: 'Header'
   },
+  {
+    Number: 'F3.6',
+    Name: 'Figma About',
+    LinkSimple: './f3.6/f3.6.html',
+    LinkManual: '',
+    LinkCrib: 'https://www.figma.com/file/M7RJWbBEnHt1jAjOhatJ3E/F3?type=design&node-id=0%3A1&t=5ctpu1ik6Azukal9-1',
+    Title: 'Header'
+  },
 ]
 
 export default FStore;
