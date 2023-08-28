@@ -26,6 +26,8 @@ for (let i = 0; i < manualsListStore.length; i++) {
     manualsItem.querySelector('.ManualLinkSimple').setAttribute('target', '');
     manualsItem.querySelector('.ManualLinkManual').setAttribute('href', '../blender/Simle/' + manualsItemInfo.Number + '.blend');
     manualsItem.querySelector('.ManualLinkManual').setAttribute('target', '');
+    manualsItem.querySelector('.ManualLinkHomeWork').setAttribute('href', '../blender/Simle/' + manualsItemInfo.Number + '.png');
+    manualsItem.querySelector('.ManualLinkHomeWork').setAttribute('target', '');
   }else{
     manualsItem.querySelector('.ManualLinkSimple').setAttribute('href',  manualsItemInfo.LinkSimple);
     manualsItem.querySelector('.ManualLinkManual').setAttribute('href', manualsItemInfo.LinkManual);
