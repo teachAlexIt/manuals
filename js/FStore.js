@@ -193,6 +193,15 @@ const FStore = [
     Title: 'Адапив часть 1'
   },
   {
+    Number: 'F2.17',
+    Name: 'Отправка формы в Телеграмм',
+    LinkSimple: './f2.17/f2.17.html',
+    LinkManual: '',
+    LinkCrib: '',
+    Title: 'Отправка формы в Телеграмм'
+  },
+  
+  {
     Number: 'F3.1',
     Name: 'Figma Nav',
     LinkSimple: './f3.1/f3.1.html',
@@ -240,6 +249,8 @@ const FStore = [
     LinkCrib: 'https://www.figma.com/file/M7RJWbBEnHt1jAjOhatJ3E/F3?type=design&node-id=0%3A1&t=5ctpu1ik6Azukal9-1',
     Title: 'Header'
   },
+
+  
 ]
 
 export default FStore;
