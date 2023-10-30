@@ -45,13 +45,15 @@ iframe.onload = function () {
   }, 3000);
 }
 
+
+// f2.17
 function telegramSetMessage() {
   const chatToken = '6116745940:AAF1aWHrN5EwTVBr28_Q2Gq_v7uz5JrkoAs';
   const chatId = '396606827';
+
   const Name = document.querySelector('#name').value;
   const Emil = document.querySelector('#email').value;
   const Commit = document.querySelector('#massage').value;
-
   const messageText = `Новая заявка с сайта\n Имя -  ${Name}\n Почта - ${Emil}\n Комментарий - ${Commit}`;
 
   const url = `https://api.telegram.org/bot${chatToken}/sendMessage`;

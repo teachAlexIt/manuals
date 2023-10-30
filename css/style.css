@@ -123,7 +123,9 @@ h1 span{
     border-bottom: 2px solid var(--mainBG);
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.17);
 }
-.FStore .manuals__item:nth-child(9), .FStore .manuals__item:nth-child(25){
+.FStore .manuals__item:nth-child(9),
+ .FStore .manuals__item:nth-child(26),
+  .FStore .manuals__item:nth-child(32){
     margin-bottom: 5em;
 }
 .simple{

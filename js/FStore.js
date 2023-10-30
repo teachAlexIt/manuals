@@ -250,6 +250,17 @@ const FStore = [
     Title: 'Header'
   },
 
+
+  {
+    Number: 'F4.1',
+    Name: 'Nike nav',
+    LinkSimple: './f4.1/f4.1.html',
+    LinkManual: '',
+    LinkCrib: 'https://www.figma.com/file/grPsRjRmgJNXHpYwiXn00t/D3.1?type=design&node-id=0%3A1&mode=design&t=7LZUeL7q2LnUcACH-1',
+    Title: 'nav'
+  },
+
+
   
 ]
 

@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.theme_white {
+  --color1: #FEFFF6;
+  --color2: #313131;
+  --color3: #848D3D;
+  --color4: #5C5C5C;
+  --colorShadow: rgba(132, 141, 61, 0.30);
+}
+
+body {
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 100%;
+}
+
+
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 0px 0px 20px 20px;
+  background: var(--color1);
+  box-shadow: 0px 0px 20px 0px var(--colorShadow);
+  padding: 28px 0;
+}
+
+.nav__elements {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  height: 44px;
+}
+
+.nav__logo path {
+  fill: var(--color3);
+}
+
+.nav__links {
+  display: flex;
+  gap: 60px;
+}
+
+.nav__links a {
+  color: var(--color2);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  position: relative;
+  transition: 0.4s;
+}
+
+.link_bottom-ball::after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: var(--color2);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 100%);
+  border-radius: 4px;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.link_bottom-ball:hover {
+  color: var(--color3);
+}
+
+.link_bottom-ball:hover::after {
+  opacity: 1;
+  background-color: var(--color3);
+}
+
+.nav__tools {
+  display: flex;
+  gap: 20px;
+}
+
+.nav__tools button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: var(--color2);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  cursor: pointer;
+  transition: 0.4s;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.nav__tools button:hover{
+  color: var(--color3);
+}
+
+.nav__tools .btn-user{
+  font-size: 40px;
+  position: relative;
+  padding: 0;
+}
+
+.btn-user .user-name{
+  font-size: 16px;
+  font-family: 'Comfortaa', sans-serif;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 100%);
+  opacity: 0;
+  color: var(--color2);
+  transition: 0.4s;
+  pointer-events: none;
+
+}
+
+.nav__tools .btn-user:hover .user-name{
+  opacity: 1;
+  color: var(--color3);
+}
