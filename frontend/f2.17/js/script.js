@@ -34,20 +34,22 @@ for (let number = 0; number < 4; number++) {//F2.1513️⃣
 
 
 // f2.16
-let iframe = document.querySelector('iframe');
-let formSend = document.querySelector('.form__send');
-iframe.onload = function () {
-  formSend.classList.add('form__send_active');
-  telegramSetMessage();
-  setTimeout(() => {
-    document.querySelector('form').reset();
-    formSend.classList.remove('form__send_active');
-  }, 3000);
-}
+// let iframe = document.querySelector('iframe');
+// let formSend = document.querySelector('.form__send');
+// iframe.onload = function () {
+//   formSend.classList.add('form__send_active');
+//   telegramSetMessage();
+//   setTimeout(() => {
+//     document.querySelector('form').reset();
+//     formSend.classList.remove('form__send_active');
+//   }, 3000);
+// }
 
 
 // f2.17
-function telegramSetMessage() {
+
+const form = document.querySelector('form');
+form.onsubmit = function(){
   const chatToken = '6116745940:AAF1aWHrN5EwTVBr28_Q2Gq_v7uz5JrkoAs';
   const chatId = '396606827';
 
@@ -68,4 +70,5 @@ function telegramSetMessage() {
     .catch(error => {
       console.error('Ошибка при отправке сообщения:', error);
     });
+    return false
 }

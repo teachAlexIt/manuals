@@ -10,6 +10,7 @@ body{
     --MainColorHover: #753344;
     --gray: #6d6d6d;
     --grayHover: #535353;
+    --borderRadius: 10px;
     background-color: var(--mainBG);
     width: 100%;
     height: auto; 
@@ -41,6 +42,7 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
     width: 6px;
     background-color: var(--MainColor);
+    border-radius: var(--borderRadius);
 }
 nav{
     position: fixed;
@@ -51,6 +53,7 @@ nav{
     box-shadow: 0 0 8px var(--MainColor);
     z-index: 10;
     padding: 8px 0;
+    border-radius: 0 0 var(--borderRadius) var(--borderRadius);
 }
 .container{
     padding: 0 32px;
@@ -87,6 +90,8 @@ h1 span{
     background-color: var(--MainColor);
     transition: 0.4s;
     text-align: center;
+
+    border-radius: var(--borderRadius);
 }
 .curse__list a:hover{
     transform: scale(1.05);
@@ -114,14 +119,16 @@ h1 span{
     flex-direction: column;
     text-align-last: left;
     gap: 8px;
-    height: 50px;
+    height: 48px;
     overflow: hidden;
     justify-content: start;
     flex-wrap: nowrap;
-    transition: 0.4s ease-out;
+    transition: 0.4s;
+    transition-timing-function: cubic-bezier(0.92, -0.49, 0.7, 1.65);
     background-color: rgb(255, 255, 255);
-    border-bottom: 2px solid var(--mainBG);
+    /* border-bottom: 2px solid var(--mainBG); */
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.17);
+    border-radius: var(--borderRadius);
 }
 .FStore .manuals__item:nth-child(9),
  .FStore .manuals__item:nth-child(26),
@@ -130,6 +137,11 @@ h1 span{
 }
 .simple{
     display: none;
+}
+.manuals__list{
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
 }
 .manuals__item a{
     padding: 8px;

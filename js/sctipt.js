@@ -61,6 +61,6 @@ function chengeHeight(item) {
   if (item.classList.contains('_active')) {
     item.style.height = h + "px";
   } else {
-    item.style.height = 50 + "px";
+    item.style.height = 48 + "px";
   }
 }
