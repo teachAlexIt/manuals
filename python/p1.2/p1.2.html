@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P1.2</title>
+  <link rel="icon" href="../../minLogo.ico">
+  <link rel="stylesheet" href="../python.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/atom-one-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  
+</head>
+
+<body>
+  <div class="container">
+    <h1>Угадай число.</h1>
+    <h2>30% - 80% Угадай число</h2>
+
+    <pre>
+      <code class="language-python">
+        print('Привет! Как тебя зовут?')
+        name = input('Введите своё имя: ')
+        print(name + ', программа выбрала случайное число от 1 до 10. Попробуй его отгадать.')
+
+        import random #
+        secret_number = random.randint(1, 10)#
+        attempts = 3#
+
+        while attempts != 0:#
+          print('У вас есть попыток: ' + str(attempts))#
+          user_number = input('Введите число: ')
+          if int(user_number) == secret_number:
+            print('Победа!')
+            break#
+          if int(user_number) > secret_number:
+            attempts-=1#
+            print('Секретное число меньше!')
+          if int(user_number) < secret_number:
+            attempts-=1#
+            print('Секретное число больше!')
+          
+          if attempts == 0:#
+            print('Попытки закончились! Вы проиграли! Секретное число было ' + str(secret_number))#
+            break#
+      </code>
+    </pre>
+
+  </div>
+  <script>hljs.highlightAll();</script>
+</body>
+
+</html>

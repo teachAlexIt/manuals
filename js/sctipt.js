@@ -1,6 +1,7 @@
 import FStore from './FStore.js';
 import DStore from './DStore.js';
 import BStore from './BStore.js';
+import PStore from './PStore.js';
 const coursName = document.querySelector('body').getAttribute('class');
 let manualsListStore;
 if (coursName == 'FStore'){
@@ -9,6 +10,8 @@ if (coursName == 'FStore'){
   manualsListStore = DStore;
 }else if(coursName === 'BStore'){
   manualsListStore = BStore;
+}else if(coursName === 'PStore'){
+  manualsListStore = PStore;
 }
 
 

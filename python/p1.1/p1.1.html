@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P1.1</title>
+  <link rel="icon" href="../../minLogo.ico">
+  <link rel="stylesheet" href="../python.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/atom-one-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  
+</head>
+
+<body>
+  <div class="container">
+    <h1>Знакомство с Python.</h1>
+    <h2>30% игры - Угадай число</h2>
+
+    <pre>
+      <code class="language-python">
+        print('Привет! Как тебя зовут?') 
+        name = input('Введите своё имя: ')
+        print(name + ', программа выбрала случайное число от 1 до 10. Попробуй его отгадать.')
+        
+        secret_number = 5
+        user_number = input('Введите число: ')
+        
+        if int(user_number) == secret_number:
+          print('Победа!')
+        if int(user_number) > secret_number:
+          print('Секретное число меньше!')
+        if int(user_number) < secret_number:
+          print('Секретное число больше!')
+      </code>
+    </pre>
+
+  </div>
+  <script>hljs.highlightAll();</script>
+</body>
+
+</html>
