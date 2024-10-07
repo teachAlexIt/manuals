@@ -33,6 +33,32 @@ const PStore = [
 },
 
 
+{
+  Number: 'P2.1',
+  Name: 'Угадай слово. 0% - 30%',
+  LinkSimple: './p2.1/p2.1.html',
+  LinkManual: '',
+  LinkCrib: '',
+  Title: 'Массив, цыкл'
+},
+{
+  Number: 'P2.2',
+  Name: 'Угадай слово. 30% - 60%',
+  LinkSimple: './p2.2/p2.2.html',
+  LinkManual: '',
+  LinkCrib: '',
+  Title: 'print(char, end="")'
+},
+{
+  Number: 'P2.3',
+  Name: 'Угадай слово. 60% - 80%',
+  LinkSimple: './p2.2/p2.2.html',
+  LinkManual: '',
+  LinkCrib: '',
+  Title: 'print(char, end="")'
+},
+
+
  
 ]
 

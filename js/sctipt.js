@@ -2,6 +2,7 @@ import FStore from './FStore.js';
 import DStore from './DStore.js';
 import BStore from './BStore.js';
 import PStore from './PStore.js';
+import RStore from './RStore.js';
 const coursName = document.querySelector('body').getAttribute('class');
 let manualsListStore;
 if (coursName == 'FStore'){
@@ -12,6 +13,8 @@ if (coursName == 'FStore'){
   manualsListStore = BStore;
 }else if(coursName === 'PStore'){
   manualsListStore = PStore;
+}else if(coursName === 'RStore'){
+  manualsListStore = RStore;
 }
 
 
@@ -31,7 +34,15 @@ for (let i = 0; i < manualsListStore.length; i++) {
     manualsItem.querySelector('.ManualLinkManual').setAttribute('target', '');
     manualsItem.querySelector('.ManualLinkHomeWork').setAttribute('href', '../blender/Simle/' + manualsItemInfo.Number + '.png');
     manualsItem.querySelector('.ManualLinkHomeWork').setAttribute('target', '');
-  }else{
+  }else if(coursName === 'RStore'){
+    manualsItem.querySelector('.ManualLinkSimple').setAttribute('href', '../roblox/Simle/' + manualsItemInfo.Number + '.rbxl');
+    manualsItem.querySelector('.ManualLinkSimple').setAttribute('target', '');
+    manualsItem.querySelector('.ManualLinkManual').setAttribute('href', manualsItemInfo.LinkManual);
+    manualsItem.querySelector('.ManualLinkManual').setAttribute('target', '_blank');
+    manualsItem.querySelector('.ManualLinkHomeWork').setAttribute('href', manualsItemInfo.LinkHomeWork);
+    manualsItem.querySelector('.ManualLinkHomeWork').setAttribute('target', '_blank');
+  }
+  else{
     manualsItem.querySelector('.ManualLinkSimple').setAttribute('href',  manualsItemInfo.LinkSimple);
     manualsItem.querySelector('.ManualLinkManual').setAttribute('href', manualsItemInfo.LinkManual);
   }

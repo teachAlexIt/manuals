@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P2.3</title>
+  <link rel="icon" href="../../minLogo.ico">
+  <link rel="stylesheet" href="../python.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/atom-one-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  
+</head>
+
+<body>
+  <div class="container">
+    <h1>Угадай слово.</h1>
+    <h2>30% - 60%</h2>
+    <p>Цикл для повторения. Остановка цикла</p>
+    <p>
+      Новое: -<br>
+    </p>
+      
+    <pre>
+      <code class="language-python">
+        print('🖐️ Привет! Как тебя зовут?')
+        name = input('Введите своё имя: ')
+        words = ['слово', 'книга']
+
+        import random
+
+        description = [
+            """
+                Ни рукой его не тронуть,
+                Топором не разрубить.
+                Без него никто не может
+                Ни писать, ни говорить.
+            """,
+            """
+                В ней герои и сюжеты,
+                Приключения, ответы.
+                На полке часто отдыхает,
+                Читателя всегда встречает.  
+            """,
+        ]
+
+        def game():
+            print(f'{name} программа загадала слово из 5 букв.')
+            random_number = random.randint(0, 1)
+            secret_word = words[random_number]
+            word_description = description[random_number]
+            
+            print(f'Вот подсказка: {word_description}')
+            letters = []
+            
+            win = False🔴
+            attempts = 3🔴
+
+            while win == False:🔴
+                print(f'Вы можете допустить ошибок: {attempts}')🔴
+                letter = input(f'{name}, введи одну букву, которая может быть в этом слове: ').lower().strip()
+                letters.append(letter)
+                
+                win = True🔴
+                for char in secret_word:
+                    if char in letters:
+                        print(char, end='')
+                    else:
+                        print('✳️ ', end=' ')
+                        win = False🔴
+                print('')
+                if letter in secret_word:
+                    print(f'Отлично! Буква "{letter}" есть в слове!')
+                else:
+                    print(f'К сожадению буквы "{letter}" нет в слове!')
+                    attempts -=1🔴
+                    if attempts == 0:🔴
+                        break🔴
+                
+                print('')🔴
+                    
+          
+        game()
+      </code>
+    </pre>
+
+  </div>
+  <script>hljs.highlightAll();</script>
+</body>
+
+</html>

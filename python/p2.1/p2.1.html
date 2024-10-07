@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P2.1</title>
+  <link rel="icon" href="../../minLogo.ico">
+  <link rel="stylesheet" href="../python.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/atom-one-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  
+</head>
+
+<body>
+  <div class="container">
+    <h1>Угадай слово.</h1>
+    <h2>0% - 30%</h2>
+    <p>
+      Новое: <br>
+      f'{name} программа загадала слово из 5 букв.' <br>
+      secret_word = words[random_number] <br>
+    </p>
+      
+    <pre>
+      <code class="language-python">
+        print('🖐️ Привет! Как тебя зовут?')
+        name = input('Введите своё имя: ')
+        words = ['слово', 'книга']
+
+        import random
+
+        description = [
+            """🔴
+                Ни рукой его не тронешь,
+                Ни ножом не разрубить.
+                Без него никто не может
+                Ни писать, ни говорить.
+            """,🔴
+            """🔴
+                В ней герои и сюжеты,
+                Приключения, ответы.
+                На полке часто отдыхает,
+                Читателя всегда встречает.
+            """,🔴
+        ]
+
+        def game():
+            print(f'{name} программа загадала слово из 5 букв.')🔴
+            random_number = random.randint(0, 1)
+            secret_word = words[random_number]🔴
+            word_description = description[random_number]🔴
+            print(secret_word, word_description)
+            
+            
+            
+        game()
+      </code>
+    </pre>
+
+  </div>
+  <script>hljs.highlightAll();</script>
+</body>
+
+</html>

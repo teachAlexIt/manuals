@@ -33,23 +33,16 @@ for (let number = 0; number < 4; number++) {//F2.1513️⃣
 }
 
 
-// f2.16
-// let iframe = document.querySelector('iframe');
-// let formSend = document.querySelector('.form__send');
-// iframe.onload = function () {
-//   formSend.classList.add('form__send_active');
-//   telegramSetMessage();
-//   setTimeout(() => {
-//     document.querySelector('form').reset();
-//     formSend.classList.remove('form__send_active');
-//   }, 3000);
-// }
+let iframe = document.querySelector('iframe');
+let formSend = document.querySelector('.form__send');
+iframe.onload = function () {
+  formSend.classList.add('form__send_active');
+  // telegramSetMessage();
+  setTimeout(() => {
+    document.querySelector('form').reset();
+    formSend.classList.remove('form__send_active');
+  }, 3000);
 
-
-// f2.17
-
-const form = document.querySelector('form');
-form.onsubmit = function(){
   const chatToken = '6116745940:AAF1aWHrN5EwTVBr28_Q2Gq_v7uz5JrkoAs';
   const chatId = '396606827';
 
@@ -72,3 +65,31 @@ form.onsubmit = function(){
     });
     return false
 }
+
+
+// f2.17
+
+// const form = document.querySelector('form');
+// form.onsubmit = function(){
+//   const chatToken = '6116745940:AAF1aWHrN5EwTVBr28_Q2Gq_v7uz5JrkoAs';
+//   const chatId = '396606827';
+
+//   const Name = document.querySelector('#name').value;
+//   const Emil = document.querySelector('#email').value;
+//   const Commit = document.querySelector('#massage').value;
+//   const messageText = `Новая заявка с сайта\n Имя -  ${Name}\n Почта - ${Emil}\n Комментарий - ${Commit}`;
+
+//   const url = `https://api.telegram.org/bot${chatToken}/sendMessage`;
+//   const params = {
+//     chat_id: chatId,
+//     text: messageText,
+//   };
+//   axios.post(url, params)
+//     .then(response => {
+//       console.log('Сообщение успешно отправлено:', response.data);
+//     })
+//     .catch(error => {
+//       console.error('Ошибка при отправке сообщения:', error);
+//     });
+//     return false
+// }

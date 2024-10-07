@@ -33,6 +33,10 @@ body.PStore{
     --MainColor: #279406;
     --MainColorHover: #1b6605;
 }
+body.RStore{
+    --MainColor: #1670d0;
+    --MainColorHover: #1156a0;
+}
 body::-webkit-scrollbar{
     position: fixed;
     top: 0;
@@ -111,6 +115,9 @@ h1 span{
 .curse__list .python{
     background-color: #279406;
 }
+.curse__list .roblox{
+    background-color: #1670d0;
+}
 
 
 /*  */
@@ -124,17 +131,15 @@ h1 span{
     justify-content: start;
     flex-wrap: nowrap;
     transition: 0.4s;
-    transition-timing-function: cubic-bezier(0.92, -0.49, 0.7, 1.65);
+    /* transition-timing-function: cubic-bezier(0.92, -0.49, 0.7, 1.65); */
+    transition-timing-function: ease-in-out;
     background-color: rgb(255, 255, 255);
     /* border-bottom: 2px solid var(--mainBG); */
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.17);
     border-radius: var(--borderRadius);
 }
-.FStore .manuals__item:nth-child(9),
- .FStore .manuals__item:nth-child(26),
-  .FStore .manuals__item:nth-child(32){
-    margin-bottom: 5em;
-}
+
+
 .simple{
     display: none;
 }
@@ -222,5 +227,17 @@ h2{
     width: 50vw;
     max-width: 1000px;
     min-width: 250px;
+}
+
+.FStore .manuals__item:nth-child(9),
+ .FStore .manuals__item:nth-child(26),
+  .FStore .manuals__item:nth-child(32){
+    margin-bottom: 5em;
+}
+
+.PStore .manuals__item:nth-child(5),
+ .PStore .manuals__item:nth-child(26),
+  .PStore .manuals__item:nth-child(32){
+    margin-bottom: 5em;
 }
 
