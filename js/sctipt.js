@@ -28,26 +28,39 @@ for (let i = 0; i < manualsListStore.length; i++) {
   manualsItem.querySelector('.ManualName').innerText = manualsItemInfo.Name;
  
   if (coursName === 'BStore') {
-    manualsItem.querySelector('.ManualLinkSimple').setAttribute('href', '../blender/Simle/' + manualsItemInfo.Number + '.fbx');
+    manualsItem.querySelector('.ManualLinkSimple').setAttribute('href', '../blender/Simple/' + manualsItemInfo.Number + '.fbx');
     manualsItem.querySelector('.ManualLinkSimple').setAttribute('target', '');
-    manualsItem.querySelector('.ManualLinkManual').setAttribute('href', '../blender/Simle/' + manualsItemInfo.Number + '.blend');
+
+    manualsItem.querySelector('.ManualLinkManual').setAttribute('href', '../blender/Simple/' + manualsItemInfo.Number + '.blend');
     manualsItem.querySelector('.ManualLinkManual').setAttribute('target', '');
-    manualsItem.querySelector('.ManualLinkHomeWork').setAttribute('href', '../blender/Simle/' + manualsItemInfo.Number + '.png');
+
+    manualsItem.querySelector('.ManualLinkHomeWork').setAttribute('href', '../blender/Simple/' + manualsItemInfo.Number + '.png');
     manualsItem.querySelector('.ManualLinkHomeWork').setAttribute('target', '');
+
+    manualsItem.querySelector('.ManualLinkCrib').setAttribute('href', manualsItemInfo.LinkCrib);
+
   }else if(coursName === 'RStore'){
-    manualsItem.querySelector('.ManualLinkSimple').setAttribute('href', '../roblox/Simle/' + manualsItemInfo.Number + '.rbxl');
+    manualsItem.querySelector('.ManualLinkSimple').setAttribute('href', '../roblox/Simple/' + manualsItemInfo.Number + '.rbxl');
     manualsItem.querySelector('.ManualLinkSimple').setAttribute('target', '');
+
     manualsItem.querySelector('.ManualLinkManual').setAttribute('href', manualsItemInfo.LinkManual);
-    manualsItem.querySelector('.ManualLinkManual').setAttribute('target', '_blank');
     manualsItem.querySelector('.ManualLinkHomeWork').setAttribute('href', manualsItemInfo.LinkHomeWork);
-    manualsItem.querySelector('.ManualLinkHomeWork').setAttribute('target', '_blank');
-  }
-  else{
+    manualsItem.querySelector('.ManualLinkCrib').setAttribute('href', manualsItemInfo.LinkCrib);
+  }else if(coursName === 'PStore'){
+    manualsItem.querySelector('.ManualLinkSimple').setAttribute('href', '../python/Simple/' + manualsItemInfo.Number + '.py');
+    manualsItem.querySelector('.ManualLinkSimple').setAttribute('target', '');
+
+    manualsItem.querySelector('.ManualLinkManual').setAttribute('href', manualsItemInfo.LinkManual);
+    manualsItem.querySelector('.ManualLinkHomeWork').setAttribute('href', manualsItemInfo.LinkHomeWork);
+    manualsItem.querySelector('.ManualLinkCrib').setAttribute('href', manualsItemInfo.LinkCrib);
+  }else{
     manualsItem.querySelector('.ManualLinkSimple').setAttribute('href',  manualsItemInfo.LinkSimple);
     manualsItem.querySelector('.ManualLinkManual').setAttribute('href', manualsItemInfo.LinkManual);
+    manualsItem.querySelector('.ManualLinkHomeWork').setAttribute('href', manualsItemInfo.LinkHomeWork);
+    manualsItem.querySelector('.ManualLinkCrib').setAttribute('href', manualsItemInfo.LinkCrib);
   }
   
-  manualsItem.querySelector('.ManualLinkCrib').setAttribute('href', manualsItemInfo.LinkCrib);
+ 
   manualsItem.querySelector('button').setAttribute('title', manualsItemInfo.Title);
   manualsList.appendChild(manualsItem);
 }
